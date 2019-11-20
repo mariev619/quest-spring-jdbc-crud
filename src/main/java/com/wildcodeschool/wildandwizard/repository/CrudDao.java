@@ -2,15 +2,15 @@ package com.wildcodeschool.wildandwizard.repository;
 
 import java.util.List;
 
-public interface CrudDao<T> {
+public interface CrudDao<School> {
 
-    T save(T entity);
+    School save(School entity);
 
-    T findById(Long id);
+    School findById(Long id);
 
-    List<T> findAll();
+    List<School> findAll();
 
-    T update(T entity);
+    School update(School entity);
 
     void deleteById(Long id);
 }
